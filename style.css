@@ -1,13 +1,13 @@
 /* Background - Fill entire screen with off-white background */
 html:before{
-  position:absolute;
-  top:0;
-  left:0;
-  content:''; /* We need content even if there's no text or it won't show! */
-  z-index:-1; /* Push to back of page */
-  background-color:#efefef;
-  width:100vw;
-  height:100vh;
+	position:absolute;
+	top:0;
+	left:0;
+	content:''; /* We need content even if there's no text or it won't show! */
+	z-index:-1; /* Push to back of page */
+	background-color:#efefef;
+	width:100vw;
+	height:100vh;
 }
 
 /* Main Content - Set up positioning for the content */
@@ -22,22 +22,22 @@ html{
 
 /* Heading - Display background gradient, name, and tags */
 head:before{ 
-  content:'ludicolo #272';
-  font-weight:900;
-  font-size:2em;
-  text-shadow: 0px 2px 5px rgba(0,0,0,1);
-  text-align:right;
-  text-transform:capitalize;
-  color:white;
-  display:block;
-  position:relative;
-  padding:40px 20px 10px 20px;
-  /* The background changes according to pokemon type, and sets dynamic SVGs for the 'badges'.
-  This will be covered in the next article, along with all the other dynamic stuff */
-  background:linear-gradient(to bottom right, rgb(107, 208, 244), rgb(88, 239, 86));
-  background-image:url('water.svg'),url('grass.svg'), linear-gradient(to bottom right, rgb(107, 208, 244), rgb(88, 239, 86));
-  background-repeat:no-repeat;
-  background-position:top 10px right 0px,top 10px right 80px, top 0 left 0,top 0 left 0;
+	content:'ludicolo #272';
+	font-weight:900;
+	font-size:2em;
+	text-shadow: 0px 2px 5px rgba(0,0,0,1);
+	text-align:right;
+	text-transform:capitalize;
+	color:white;
+	display:block;
+	position:relative;
+	padding:40px 20px 10px 20px;
+	/* The background changes according to pokemon type, and sets dynamic SVGs for the 'badges'.
+	This will be covered in the next article, along with all the other dynamic stuff */
+	background:linear-gradient(to bottom right, rgb(107, 208, 244), rgb(88, 239, 86));
+	background-image:url('images/water.svg'),url('images/grass.svg'), linear-gradient(to bottom right, rgb(107, 208, 244), rgb(88, 239, 86));
+	background-repeat:no-repeat;
+	background-position:top 10px right 0px,top 10px right 80px, top 0 left 0,top 0 left 0;
 }
 
 /*Content Container - Holds the displayed information */
@@ -45,7 +45,7 @@ head{
 	display:block;
 	position:relative;
 	background-color:rgba(255,255,255,0.96);
-  box-shadow: 0px 0px 105px 10px rgba(157,178,178,0.25);
+	box-shadow: 0px 0px 105px 10px rgba(157,178,178,0.25);
 	max-width:800px;
 	width:60%; /* Main container width */
 	margin:0 auto;
@@ -55,11 +55,11 @@ head{
 
 /* Pokemon Picture - Pokemon Picture */
 head:after{
-  content:''; /* Remember, pseudo-elements need content set to work */
-  height:150px;
-  width:150px;
+	content:''; /* Remember, pseudo-elements need content set to work */
+	height:150px;
+	width:150px;
 	background-color:rgba(255,255,255,0.75);
-	background-image:url('ludicolo.png');
+	background-image:url('images/ludicolo.png');
 	background-size:125%;
 	background-position:center center;
 	position:absolute;
@@ -108,7 +108,7 @@ link:after{
 	font-weight:800;
 	font-size:1.8em;
 	text-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-	background-image:url('stats.svg'); /* We'll make this dynamic in another article */
+	background-image:url('images/stats.svg'); /* We'll make this dynamic in another article */
 	background-repeat:no-repeat;
 	background-position:top 0px right 0px;
 }
