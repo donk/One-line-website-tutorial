@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="22.475531mm" height="8.1422968mm" viewBox="0 0 22.475531 8.1422969" version="1.1" id="svg8" sodipodi:docname="tag.svg" inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <defs id="defs2">
+    <filter style="color-interpolation-filters:sRGB" inkscape:label="Drop Shadow" id="filter5090" x="-0.1" height="1.4">
+      <feFlood flood-opacity="0" flood-color="rgb(0,0,0)" result="flood" id="feFlood5080"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1" id="feComposite5082"/>
+      <feGaussianBlur in="composite1" stdDeviation="0.3" result="blur" id="feGaussianBlur5084"/>
+      <feOffset dx="0" dy="0.5" result="offset" id="feOffset5086"/>
+      <feComposite in="SourceGraphic" in2="offset" operator="over" result="fbSourceGraphic" id="feComposite5088"/>
+      <feColorMatrix result="fbSourceGraphicAlpha" in="fbSourceGraphic" values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0" id="feColorMatrix5092"/>
+      <feFlood id="feFlood5094" flood-opacity="0.498039" flood-color="rgb(0,0,0)" result="flood" in="fbSourceGraphic"/>
+      <feComposite in2="fbSourceGraphic" id="feComposite5096" in="flood" operator="in" result="composite1"/>
+      <feGaussianBlur id="feGaussianBlur5098" in="composite1" stdDeviation="0.3" result="blur"/>
+      <feOffset id="feOffset5100" dx="0" dy="0.5" result="offset"/>
+      <feComposite in2="offset" id="feComposite5102" in="fbSourceGraphic" operator="" result="composite2"/>
+    </filter>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="3.959798" inkscape:cx="-28.614644" inkscape:cy="33.114977" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1920" inkscape:window-height="1028" inkscape:window-x="-8" inkscape:window-y="405" inkscape:window-maximized="1"/>
+  <metadata id="metadata5">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-168.49867,-115.2145)">
+    <rect style="fill:rgb(88, 239, 86);stroke:#ffffff;stroke-width:0.58099997;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5090)" id="rect3699" width="22.110987" height="6.8659139" x="166.65211" y="114.43111" ry="2.1360621" transform="matrix(0.84707244,0,0,0.84707244,29.205219,18.864653)"/>
+    <text xml:space="preserve" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.60492897px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.33140403" x="179.74994" y="119.93096" id="text4556"><tspan sodipodi:role="line" id="tspan4554" x="179.74994" y="119.93096" style="font-size:3.4768486px;fill:#ffffff;fill-opacity:1;stroke-width:0.33140403">grass</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,114 @@
+/* Background - Fill entire screen with off-white background */
+html:before{
+  position:absolute;
+  top:0;
+  left:0;
+  content:''; /* We need content even if there's no text or it won't show! */
+  z-index:-1; /* Push to back of page */
+  background-color:#efefef;
+  width:100vw;
+  height:100vh;
+}
+
+/* Main Content - Set up positioning for the content */
+html{
+	display:block;
+	position:absolute;
+	width:90vw;
+	padding:20vh 5vw;
+	overflow:hidden;
+	text-align:center;
+}
+
+/* Heading - Display background gradient, name, and tags */
+head:before{ 
+  content:'ludicolo #272';
+  font-weight:900;
+  font-size:2em;
+  text-shadow: 0px 2px 5px rgba(0,0,0,1);
+  text-align:right;
+  text-transform:capitalize;
+  color:white;
+  display:block;
+  position:relative;
+  padding:40px 20px 10px 20px;
+  /* The background changes according to pokemon type, and sets dynamic SVGs for the 'badges'.
+  This will be covered in the next article, along with all the other dynamic stuff */
+  background:linear-gradient(to bottom right, rgb(107, 208, 244), rgb(88, 239, 86));
+  background-image:url('water.svg'),url('grass.svg'), linear-gradient(to bottom right, rgb(107, 208, 244), rgb(88, 239, 86));
+  background-repeat:no-repeat;
+  background-position:top 10px right 0px,top 10px right 80px, top 0 left 0,top 0 left 0;
+}
+
+/*Content Container - Holds the displayed information */
+head{
+	display:block;
+	position:relative;
+	background-color:rgba(255,255,255,0.96);
+  box-shadow: 0px 0px 105px 10px rgba(157,178,178,0.25);
+	max-width:800px;
+	width:60%; /* Main container width */
+	margin:0 auto;
+	padding-bottom:30px;
+	transition:width 0.6s;
+}
+
+/* Pokemon Picture - Pokemon Picture */
+head:after{
+  content:''; /* Remember, pseudo-elements need content set to work */
+  height:150px;
+  width:150px;
+	background-color:rgba(255,255,255,0.75);
+	background-image:url('ludicolo.png');
+	background-size:125%;
+	background-position:center center;
+	position:absolute;
+	display:block;
+	top:-80px;
+	left:20px;
+	z-index:2;
+	border:rgb(107, 208, 244) 15px solid;
+	border-radius:100%;
+}
+
+/* Stats Container - Acts as a link, so we take away the blue/underline */
+link{
+	display:block;
+	position:relative;
+	padding:30px 50px;
+	color:#333;
+	text-decoration:none;
+}
+
+/* Pokemon Description - Weight, height, and short description */
+link:before{
+	text-align:left;
+	display:block;
+	position:relative;
+	line-height:1.2em;
+	width:50%;
+	margin-top:3em;
+  /* Content must be on one line in the style sheet, and 
+  white-space: pre-wrap; is required for line breaks using \a */
+  white-space: pre-wrap;
+	content:'\aWeight - 55kg \a\aHeight - 1.5m \a\a Upon hearing an upbeat and cheerful rhythm, the cells in Ludicolo\'s body become very energetic and active. Even in battle, this Pokémon will exhibit an amazing amount of power.';
+	height:100%;
+}
+
+/* Genus and Stat Image - I called this 'type' in the structure, but it's actually genus 
+We use absolute positioning so we can right-align the stat image being used as a background*/
+link:after{
+	text-align:left;
+	display:block;
+	position:absolute;
+	top:40px;
+	width:calc(100% - 80px);
+	content:'Carefree Pokémon';
+	height:600px;
+	font-weight:800;
+	font-size:1.8em;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+	background-image:url('stats.svg'); /* We'll make this dynamic in another article */
+	background-repeat:no-repeat;
+	background-position:top 0px right 0px;
+}
